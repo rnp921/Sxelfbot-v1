@@ -12,7 +12,7 @@ from utils.config import *
 
 def ssspam(webhook):
     while spams:
-        data = {'content':'@everyone @here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here Junglee Kingdom SE LOGE PANGA LO HO GAYA NANGA JOIN FAST https://discord.gg/programmer'}
+        data = {'content':'@everyone @here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here@here Junglee Kingdom SE LOGE PANGA LO HO GAYA NANGA JOIN FAST'}
         spamming = requests.post(webhook, json=data)
         spammingerror = spamming.text
         if spamming.status_code == 204:
